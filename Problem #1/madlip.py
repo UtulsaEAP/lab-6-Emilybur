@@ -1,10 +1,9 @@
 def food_input():
-    #type you while  loop here
-    while True: 
-        user_input = input()
+    while True:
+        user_input = input() 
         tokens = user_input.split()
         
-        if tokens[0] == 'quit':
+        if tokens[0].lower() == 'quit':
             break
         
         word = tokens[0]
@@ -12,6 +11,7 @@ def food_input():
         
         output = f"Eating {number} {word} a day keeps you happy and healthy."
         print(output)
-    
-    if __name__ == "__main__":
-        food_input()
+
+if __name__ == "__main__":
+    food_input()
+
